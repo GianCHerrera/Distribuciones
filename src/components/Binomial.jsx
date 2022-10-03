@@ -27,10 +27,10 @@ export default function Binomial() {
     function onSubmit(e) {
         e.preventDefault()
         let answer = document.getElementById('answerBinomial')
-        if (n !== -1 && r !== -1 && p !== -1 && q !== -1 ) {
-            let res = calculateBinomialProbability(n,r,q,p)*100
+        if (n !== -1 && r !== -1 && p !== -1 && q !== -1) {
+            let res = calculateBinomialProbability(n, r, q, p) * 100
             answer.textContent = res + '%'
-        } 
+        }
         answer.classList.remove('hidden')
     }
 
@@ -67,10 +67,10 @@ export default function Binomial() {
 
                     <div className='infoTextImg'>
                         <p className='definition'>
-                            La distribución de Bernoulli es un modelo teórico utilizado para representar una variable aleatoria discreta la cual solo puede resultar en dos sucesos mutuamente excluyentes.
+                            Una distribución binomial es una distribución de probabilidad discreta que describe el número de éxitos al realizar n experimentos independientes entre sí, acerca de una variable aleatoria.
                         </p>
 
-                        <img src={require('../images/bernoulli.png')}
+                        <img src={require('../images/binomial.png')}
                             alt='Function'
                             className='imageFunction'
                         />
